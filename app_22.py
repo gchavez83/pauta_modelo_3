@@ -7,7 +7,7 @@ st.set_page_config(page_title="Modelo de Predicción de Resultados de Anuncios")
 
 @st.cache(allow_output_mutation=True)
 def get_model():
-    return load_model("final_rf_pauta")
+    return load_model("final_et_pauta_3")
 
 def predict(model, df):
     predictions = predict_model(model, data = df)
